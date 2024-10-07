@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Contact page</title>
+  </head>
+  <body>
+    <h1>Contact Us</h1>
+
+    <form class="contact-form" id="form">
+      <label for="name">Name</label>
+      <input type="text" id="from_name" placeholder="Your name..." />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Your Email..." />
+
+      <label for="subject">Subject</label>
+      <input type="text" id="subject" placeholder="Subject..." />
+
+      <label for="message">Message</label>
+      <textarea id="message" placeholder="Message here..."></textarea>
+
+      <button type="submit" id="submit" class="submit-btn">Submit</button>
+
+      <div id="success-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-btn">&times;</span>
+          <p>Message sent successfully</p>
+        </div>
+      </div>
+    </form>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
